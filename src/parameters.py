@@ -167,3 +167,5 @@ print(b)
 # More convenient:
 b = -1 if a < 0 else 1
 print(b)
+b = -1 if a < 0 else 0 if a == 0 else 1
+print(b)
