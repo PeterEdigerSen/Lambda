@@ -11,7 +11,7 @@ def standard(p1, p2, p3):
 
 standard(1, 2, 3)
 standard(p3=3, p2=2, p1=1)
-
+standard(1, p3=3, p2=2)
 print('   Positional only')
 
 
@@ -57,12 +57,15 @@ print('   Variable-length parameters (arbitrary parameters)')
 print('   Arbitrary pos parameters')
 
 
-def arbitrary_pos(*p1):
+def arbitrary_pos(p1, *p2, p3):
     print(p1)
+    print(p2)
+    print(p3)
+    print('-----')
 
 
-arbitrary_pos(1, 2)
-arbitrary_pos(1, 2, 3, 4, 5, 6, 7)
+arbitrary_pos(1, p3=2)
+arbitrary_pos(1, 2, 3, 4, 5, 6, p3=7)
 
 print('   Arbitrary kwd parameters')
 
