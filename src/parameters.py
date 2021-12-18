@@ -157,7 +157,7 @@ unpack_pos_and_kwd(*l1, *l2, **d2, **d1)  # but not:
 unpack_pos_and_kwd(*l2, *l1, **d2, **d1)  # and not:
 # unpack_pos_and_kwd(*l1, *d1, **l2, **d2)  # or:
 
-print('   By the way: conditional assignment ')
+print('   By the way: conditional assignment')
 
 # Traditional:
 
